@@ -1,5 +1,5 @@
 # Dockerisation
 
-```js
-//npm install
+```
+npm install
 ```
