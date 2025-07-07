@@ -97,7 +97,75 @@ docker rmi mon-image
 docker image prune
 ```
 
+##  Commandes Docker : Conteneurs
+
+###  Lancer un conteneur
+
+```bash
+docker run -d --name mon-conteneur -p 8080:80 nginx
+```
+
+- `-d` : détaché (en arrière-plan)
+- `--name` : nom du conteneur
+- `-p 8080:80` : associer le port 80 du conteneur au port 8080 de la machine hôte
+
 ---
+
+### Lister les conteneurs
+
+- Conteneurs actifs :
+
+```bash
+docker ps
+```
+
+- Tous les conteneurs (actifs et stoppés) :
+
+```bash
+docker ps -a
+```
+
+---
+
+### Arrêter un conteneur
+
+```bash
+docker stop mon-conteneur
+```
+
+---
+
+### Redémarrer un conteneur
+
+```bash
+docker start mon-conteneur
+```
+
+---
+
+### Recréer un conteneur (si supprimé)
+
+```bash
+docker run -d --name mon-conteneur nginx
+```
+
+---
+
+### Supprimer un conteneur
+
+```bash
+docker rm mon-conteneur
+```
+
+---
+
+### Supprimer tous les conteneurs arrêtés
+
+```bash
+docker container prune
+```
+
+
 
 
 
