@@ -58,4 +58,49 @@ Docker version 24.x.x, build xxxxxxx
 ```
 
 
+## Commandes Docker pour gérer les images
+
+### Télécharger (pull) une image Docker depuis Docker Hub
+
+```bash
+docker pull nginx
+```
+
+### Lister les images Docker présentes localement
+
+```bash
+docker images
+```
+
+### Construire une image à partir d'un Dockerfile
+
+```bash
+docker build -t mon-image .
+```
+
+
+### Lancer un conteneur à partir de l’image
+
+```bash
+docker run -d -p 8080:80 mon-image
+```
+
+### Supprimer une image Docker
+
+```bash
+docker rmi mon-image
+```
+
+### Supprimer toutes les images inutilisées
+
+```bash
+docker image prune
+```
+
+---
+
+
+
+
+
 
