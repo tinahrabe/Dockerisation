@@ -28,3 +28,34 @@ sudo apt install docker-ce
 docker --version
 ```
 
+## 🪟 Installation de Docker Desktop sur Windows
+
+1. 🔽 Télécharger Docker Desktop :
+   👉 [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
+
+2. 📦 Lancer le fichier `.exe` téléchargé et suivre les étapes d'installation.
+
+3. 🧰 Activer la **virtualisation** dans le BIOS si ce n'est pas déjà fait (nécessaire pour WSL2).
+
+4. ⚙️ Vérifier que **WSL2** est installé (Docker Desktop l'utilise par défaut) :
+
+```powershell
+wsl --install
+```
+
+5. 🔄 Redémarrer votre machine si demandé.
+
+6. ✅ Une fois Docker Desktop installé et lancé, ouvrez un terminal (PowerShell ou CMD) et tapez :
+
+```powershell
+docker --version
+```
+
+Tu devrais voir une sortie comme :
+
+```bash
+Docker version 24.x.x, build xxxxxxx
+```
+
+
+
